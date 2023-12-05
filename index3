@@ -1,0 +1,72 @@
+// const express = require("express");
+// const app = express();
+// const path = require("path");
+// const cookieParser = require("cookie-parser");
+// const jwt = require("jsonwebtoken");
+// const bcrypt = require("brcypt");
+// const mongoose = require("mongoose");
+// // express.static(pathf.join(path.resolve(), "public"));
+// // setting up view engine
+
+// mongoose
+//   .connect("mongodb://127.0.0.1:27017", {
+//     dbName: "Backendpack",
+//   })
+//   .then((c) => console.log("database connected"))
+//   .catch((err) => console.log(err));
+
+// const userSchema = new mongoose.Schema({
+//   name: String,
+//   email: String,
+//   password: String,
+// });
+// const User = mongoose.model("User", userSchema);
+
+// // setting the view engine
+// app.set("view engine", "ejs");
+
+// // middlewares
+// app.use(express.static(path.join(path.resolve(), "public")));
+// app.use(express.urlencoded({ extended: true }));
+// app.use(cookieParser());
+
+// app.get("/", (req, res) => {
+//   // res.render("index", { name: "Abhishek" });
+//   res.render("index", { name: "Singh" });
+// });
+
+// // making the success route
+
+// app.get("/success", (req, res) => {
+//   // res.render("index", { name: "Abhishek" });
+//   res.render("success");
+// });
+
+// // data is created
+// app.get("/add", async (req, res) => {
+//   // res.render("index", { name: "Abhishek" });
+//   await Message.create({ name: "abhi", email: "sample@gmail.com" }).res.send(
+//     "Nice"
+//   );
+// });
+
+// app.post("/contact", async (req, res) => {
+//   // const messageData = { username: req.body.name, email: req.body.email };
+//   // console.log(messageData);
+//   const { name, email } = req.body;
+//   // await Message.create({ name: name, email: email });
+//   // if key value pair is name
+
+//   await Message.create({ name, email });
+//   res.redirect("/success");
+// });
+
+// // this is the api
+// app.get("/users", (req, res) => {
+//   res.json({
+//     users,
+//   });
+// });
+// app.listen(5000, () => {
+//   console.log("this is server working from express");
+// });

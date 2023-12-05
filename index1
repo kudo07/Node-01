@@ -1,0 +1,36 @@
+// import http from "http";
+// import fs from "fs";
+// // import { name, name1, name2 } from "./feature.js";
+// // import * as myobj from "./feature.js";
+// // console.log(myobj);
+// import { generateLovePercent } from "./feature.js";
+// // console.log(generateLovePercent());
+// // this is the module
+
+// // console.log(home);
+// const home = fs.readFileSync("./index.html");
+// // console.log(home);
+// const server = http.createServer((req, res) => {
+//   if (req.url === "/about") {
+//     // this is api endpoint
+//     res.end(`<h1>Love is ${generateLovePercent()}</h1>`);
+//   }
+//   if (req.url === "/ contact") {
+//     res.end("<h1>Contact Page</h1>");
+//   }
+//   if (req.url === "/") {
+//     res.end(home);
+
+//     // fs.readFile("./index.html", (err, home) => {
+//     //   res.end(home);
+//     // });
+//     // () => this is the callback function
+//     // res.end(home);
+//   } else {
+//     res.end("<h1>Page not Found </h1>");
+//   }
+// });
+
+// server.listen(5000, () => {
+//   console.log("server is working");
+// });
